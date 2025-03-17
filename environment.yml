@@ -1,20 +1,22 @@
 # Conda Environment Setup Instructions
 #
 #    conda env create -f environment.yml
+#    conda activate ai_agent_py310
 #    conda env update --file environment.yml --prune
 #    conda env export --name name: ai_agent_praxis_project> environment.yml
 #    conda env remove --name name: ai_agent_praxis_project
 #    conda env list
 
-name: ai_agent_praxis_project
+name: ai_agent_py310
 channels:
   - anaconda
   - conda-forge
   - defaults
 dependencies:
-  - python=3.8.15
+  - python=3.10
   - pip
   - bottleneck
   - pip:
-      - philentropy
-      - dotenv
+    - phi
+    - python-dotenv
+    - groq
