@@ -1,0 +1,20 @@
+# Conda Environment Setup Instructions
+#
+#    conda env create -f environment.yml
+#    conda env update --file environment.yml --prune
+#    conda env export --name name: ai_agent_praxis_project> environment.yml
+#    conda env remove --name name: ai_agent_praxis_project
+#    conda env list
+
+name: ai_agent_praxis_project
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8.15
+  - pip
+  - bottleneck
+  - pip:
+      - philentropy
+      - dotenv
