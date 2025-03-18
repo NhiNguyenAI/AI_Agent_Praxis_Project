@@ -20,3 +20,4 @@ dependencies:
     - phi
     - python-dotenv
     - groq
+    - yfinance
